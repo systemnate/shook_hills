@@ -1,0 +1,124 @@
+<div class="navbar-wrapper">
+  <%= render 'layouts/header' %>
+</div>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag 'shookhills1.jpg', class: "img-responsive" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Shook Hills All Natural Beef</h1>
+            <p>Because what you feed your family IS important!</p>
+            <p>Here at Shook Hills, our cattle are raised in all natural open pastures with unlimited lush forage.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag 'shookhills2-2.jpg', class: "img-responsive" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Shook Hills All Natural Beef</h1>
+            <p>Because what you feed your family IS important!</p>
+            <p>Here at Shook Hills, our cattle are raised in all natural open pastures with unlimited lush forage.</p>
+            <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag 'shookhills3-1.jpg', class: "img-responsive" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Shook Hills All Natural Beef</h1>
+            <p>Because what you feed your family IS important!</p>
+            <p>Here at Shook Hills, our cattle are raised in all natural open pastures with unlimited lush forage.</p>
+            <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>  
+  </div>
+  <!-- /.carousel -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <%= image_tag 'shookhills1-rounded.jpg', class: "img-responsive img-circle" %>
+        <h2>Why Tarentaise/Angus?</h2>
+        <p>Although many people are unaware of the tarentaise breed, they have been around for a very long time...</p>
+        <p><%= link_to "Read More! »", pages_tarentaise_path, class: "btn btn-default" %></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <%= image_tag 'shookhills2-rounded.jpg', class: "img-responsive img-circle" %>
+        <h2>Pricing</h2>
+        <p>Save $1,800 off current store pricing!</p>
+        <p><%= link_to "Read More! »", pages_pricing_path, class: "btn btn-default" %></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <%= image_tag 'shookhills3-rounded.jpg', class: "img-responsive img-circle" %>
+        <h2>Our Promise</h2>
+        <p>My personal promise to you is to deliver a clean, healthy, hormone/antibiotic free beef to you and your family...</p>
+        <p><%= link_to "Read More! »", pages_promise_path, class: "btn btn-default" %></a></p>
+      </div>
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <%= image_tag 'shookhills4-rounded.jpg', class: "featurette-image img-circle pull-right img-responsive" %>
+      <h2 class="featurette-heading">Setting our beef <span class="text-muted">apart.</span></h2>
+      <p class="lead">We sell only beef we raise here at Shook Hills.  No growth implants or growth stimulants.  No hormones.  No subtheraputic or topical antibiotics.  Out cattle graze on unlimited open pastures, and are supplemented with a vitamin, mineral, and corn diet.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <%= image_tag 'shookhills2-rounded.jpg', class: "featurette-image img-circle pull-left img-responsive" %>
+      <h2 class="featurette-heading">Product Goals.</h2>
+      <p class="lead">
+        <ol>
+          <li><strong>Food safety: </strong>NO hormones and NO antibiotics</li>
+          <li><strong>Humane - </strong>better treatment of animals</li>
+          <li><strong>Environmental - </strong>better management of waste, protection of natural resources</li>
+          <li><strong>Enhanced nutrients- </strong>increased conjugated linoleic acids, higher nutrient content</li>
+          <li><strong>Social - </strong>grown locally and supporting our local economy</li>
+        </ol>
+      </p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <img class="featurette-image img-circle pull-right img-responsive" src="http://placehold.it/512">
+      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+      <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+    </footer>
+
+  </div><!-- /.container -->
