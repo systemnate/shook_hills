@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get 'pages/index'
-  get 'pages/about'
-  get 'pages/contact'
-  get 'pages/promise'
-  get 'pages/pricing'
-  get 'pages/tarentaise'
+  get '/about',       to: 'pages#about'
+  get '/contact',     to: 'pages#contact'
+  get '/promise',     to: 'pages#promise'
+  get '/pricing',     to: 'pages#pricing'
+  get '/tarentaise',  to: 'pages#tarentaise'
   root 'pages#index'
 end
