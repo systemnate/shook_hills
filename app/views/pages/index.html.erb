@@ -13,9 +13,10 @@
         <%= image_tag 'shookhills1.jpg', class: "img-responsive" %>
         <div class="container">
           <div class="carousel-caption">
-            <h1><strong>Shook Hills All Natural Beef</strong></h1>
-            <p>Because what you feed your family IS important!</p>
-            <p>Here at Shook Hills, our cattle are raised in all natural open pastures with unlimited lush forage.</p>
+            <div class="logo">
+              <%= image_tag("logo2.png") %>
+            </div>
+            <br>
             <p><%= link_to "Learn More", about_path, class: "btn btn-lg btn-primary" %></p>
           </p>
           </div>
@@ -65,7 +66,7 @@
         <p><%= link_to "Read More! »", tarentaise_path, class: "btn btn-default" %></p>
       </div>
       <div class="col-md-4 text-center">
-        <%= image_tag 'shookhills2-rounded.jpg', class: "img-responsive img-circle" %>
+        <%= image_tag 'shookhillslogo.png', class: "img-responsive img-circle" %>
         <h2>Pricing</h2>
         <p>Save $1,800 off current store pricing!</p>
         <p><%= link_to "Read More! »", pricing_path, class: "btn btn-default" %></p>

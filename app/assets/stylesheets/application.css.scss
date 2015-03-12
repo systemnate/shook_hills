@@ -51,14 +51,13 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 400px;
+  height: 500px;
   background-color:#555;
 }
 .carousel img {
-  position: absolute;
   top: 0;
   left: 0;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 
@@ -269,4 +268,34 @@ blockquote cite:before {
 
 .larger-font {
   font-size: 1.75em;
+}
+
+.logo img {
+  min-height: 0px;
+  opacity: 0.9;
+  max-width:100%;
+  height:auto;
+}
+
+.subpage {
+  background-image: image-url('logo2.png');
+  opacity: 0.5;
+}
+
+.container static{
+    position: relative;
+    z-index: 1;
+}
+
+.container .subpage {
+  position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: image-url('logo2.png') center center;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
 }
