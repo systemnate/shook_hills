@@ -8,8 +8,7 @@
       <h1>Pricing</h1>
     </div>
     <h2 class="text-danger">Full finished beef delivered to your locker!*</h2>
-    <p class="larger-font">Price will be on a dollar per pound basis, with the average finished beef being
-    at $2,500 more/less based on final weight.  We request $1,250 down when the order is placed and the balance
+    <p class="larger-font">Price will be <span class="text-danger">$2 per pound</span>, with the average finished beef weighing <span class="text-danger">1,250 pounds</span> for an average cost of <span class="text-danger">$2,500</span>.  We request <span class="text-danger">$1,250</span> down when the order is placed and the balance
     paid prior to delivery.  Prices are subject to change.  Please <%= link_to "contact us", contact_path %> with any questions.</p>
     <p class="text-danger larger-font">Note: Processing not included.</p>
     <h2>Pound for Pound Value</h2>
@@ -28,5 +27,6 @@
       </tr>
     </table>
     <p class="text-danger">* delivery fee may apply</p>
+    <%= image_tag("steak.jpg", alt: "delicious meal", class: "img-responsive") %>
   </div>
 </div>
