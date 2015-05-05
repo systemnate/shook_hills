@@ -76,4 +76,14 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  # Respond.js
+  config.assets.precompile += %w( modernizr.js respond.js respond-proxy.html respond.proxy.js )
+  config.action_controller.asset_host = Proc.new { |source, request|
+    if source =~ /respond\.proxy-.+(js|gif)$/
+      "#{request.protocol}#{request.host_with_port}"
+    else
+      "//assets.example.com"
+    end
+  }
+  config.assets.precompile += %w( respond.js respond-proxy.html respond.proxy.js )  
 end
