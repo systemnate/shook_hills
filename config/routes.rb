@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/promise',     to: 'pages#promise'
   get '/pricing',     to: 'pages#pricing'
   get '/tarentaise',  to: 'pages#tarentaise'
+  get '/sitemap.xml', to: 'pages#sitemap'
   root 'pages#index'
 end

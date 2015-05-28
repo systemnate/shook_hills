@@ -16,4 +16,8 @@ class PagesController < ApplicationController
 
   def tarentaise
   end
+
+  def sitemap
+    render :layout => false
+  end
 end
